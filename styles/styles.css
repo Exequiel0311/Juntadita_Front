@@ -1,0 +1,83 @@
+div {
+    display: flex;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.image, .login {
+    padding: 20px;
+    width: 50%;
+}
+
+.image {
+    background-color: lightgreen;
+    padding: 0px;
+}
+
+.login {
+    background-color: A7F37E;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los elementos hijos se coloquen en columna */
+    justify-content: center;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-bottom: 16px; /* Espacio entre el logo y los inputs */
+}
+
+.singIn{
+    display: block;
+}
+
+input {
+    margin: 10px 0; /* Espaciado entre los inputs */
+    padding: 10px;
+    width: 100%; 
+    border-radius: 40px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttonLogin, .buttonRegister {
+    width: 40%;
+    padding: 3%;
+    margin: 5%;
+    border-radius: 40px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttonLogin{
+    background-color: 5BFF02;
+}
+
+.buttonRegister{
+    background-color: D67D46 ;
+}
+
+.backGround{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección de flex a columna para mejor organización */
+    }
+
+    .image {
+        display: none; /* Oculta el div .image */
+    }
+
+    .login {
+        width: 100%; /* Asegura que el div .login ocupe todo el ancho */
+    }
+}
